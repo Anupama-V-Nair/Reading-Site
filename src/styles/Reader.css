@@ -1,0 +1,88 @@
+.reader-root {
+  background: #d1f5d3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.reader-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #b1ebb3;
+  padding: 1rem 2rem;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-viewer {
+  flex: 1;
+  overflow: auto;
+  height: 500vh;
+  background-color: #b1ebb3;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  background: #61db67;
+  color: black;
+  transition: 0.2s;
+}
+
+.rpv-default-layout__container {
+  border: 1px solid ;
+  box-sizing: border-box;
+  height: 500vh 1392px;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.rpv-default-layout__main {
+    display: flex;
+    height: 500vh;
+    position: relative;
+}
+.rpv-default-layout__sidebar-headers {
+    background-color: #61db679c;
+    padding: .25rem;
+}
+
+.rpv-default-layout__toolbar {
+    align-items: center;
+    background-color: #61db679c;
+    border-bottom: 1px solid var(--rpv-default-layout__toolbar-border-bottom-color);
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 2.5rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.rpv-core__inner-page{
+  height: 792px;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transform: translateY(1584px);
+    background-image: url('/navbar-bg.png');
+    background-color: #9fe4b8ea;
+    z-index: 1;
+}
+
+.rpv-core__inner-page::before{
+   content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(159, 228, 184, 0.94);
+  z-index: 0;
+}
